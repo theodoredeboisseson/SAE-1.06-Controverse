@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="icon" href="./Images/MorioLogo.png">
+        <title>Contact</title>
+    </head>
+    <body>
+        <div id="enHautLa"></div>
+        <header>
+            <img src="./Images/MorioLogo.png" alt="Logo du Site">
+            <a>Morioh Podcast</a>
+            <nav>
+                <div class="currentPage"><a href="./contact.html">Contact</a></div>
+                <div>
+                    <a href="pestel.html">PESTEL</a>
+                    <div class="submenu">
+                        <div><a href="./pestel.html#P">Politique</a></div>
+                        <div><a href="./pestel.html#E">Économique</a></div>
+                        <div><a href="./pestel.html#S">Social</a></div>
+                        <div><a href="./pestel.html#T">Technologique</a></div>
+                        <div><a href="./pestel.html#E">Écologique</a></div>
+                        <div><a href="./pestel.html#L">Légal</a></div>
+                    </div>
+                </div>
+                <div><a href="./podcast.html">Podcast</a></div>
+                <div><a href="./index.html">Accueil</a></div>
+
+                <div id="burger">
+
+                    <img src="Images/burger.png" alt="Menu Burger">
+
+                    <div class="menuBurger">
+                        <div><a href="./index.html">Accueil</a></div>
+                        <div><a href="./podcast.html">Podcast</a></div>
+                        <div>
+                            <a href="pestel.html">PESTEL</a>
+                            <div class="submenuBurger">
+                                <div><a href="./pestel.html#P">Politique</a></div>
+                                <div><a href="./pestel.html#E">Économique</a></div>
+                                <div><a href="./pestel.html#S">Social</a></div>
+                                <div><a href="./pestel.html#T">Technologique</a></div>
+                                <div><a href="./pestel.html#E">Écologique</a></div>
+                                <div><a href="./pestel.html#L">Légal</a></div>
+                            </div>
+                        </div>
+                        <div class="currentPage"><a href="./contact.html">Contact</a></div>
+                    </div>
+                    
+                </div>
+                
+            </nav>
+
+        </header>
+        <main class="Contact">
+            <article class="Contact">
+                <h1>Notre cause vous intéresse ? Vous nous intéressez !</h1>
+                <form action="sendToMySecondYearInIut.php" method="get">
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                    <div>
+                    <label for="surname">Nom<span class="red">*</span> :</label>
+                    <input id="surname" name="uname" type="text" placeholder="Kayou" autofocus required>
+                    </div>
+                    <div>
+                    <label for="firstname">Prénom<span class="red">*</span> :</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="Pierre" required>
+                    </div>
+                    <div>
+                        <label for="email">Entrez votre email<span class="red">*</span> :</label>
+                        <input type="email" id="email" name="email" placeholder="kayoupierre@domaine.fr" required>
+                    </div>
+                    <div>
+                        <label for="codepostal">Entrez votre code postal<span class="red">*</span> :</label>
+                        <input type="number" id="codepostal" name="code postal" placeholder="34000" pattern="/^(?:0[1-9]|[1-8]\d|9[0-8])\d{3}$/" required>
+                    </div>
+                    <div>
+                        <label for="pays-origine">Pays d'origine<span class="red">*</span> :</label>
+                        <select name="pays" id="pays-origine">
+                        <option value="fr">France</option>
+                        <option value="usa">U.S.A</option>
+                        <option value="chn">Chine</option>
+                        <option value="jp">Japon</option>
+                        <option value="cn">Canada</option>
+                        <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>À propos</legend>
+                    <div>
+                        <label for ="info">Vous avez entendu parler de nous via<span class="red">*</span> :</label>
+                        <select name="moyens" id="info" multiple size="4">
+                            <optgroup label="Sélectionnez votre choix">
+                            <option value="fb">Facebook</option>
+                            <option value="x">X</option>
+                            <option value="insta">Instagram</option>
+                            <option value="amis">Par des amis</option>
+                            <option value="article">Via des articles en ligne</option>
+                            <option value="aucun">Aucun de ces choix</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="daterecontact">À quelle date souhaitez vous être recontactés ?<span class="red">*</span></label>
+                        <input type="date" id="daterecontact" name="daterecontact" required>
+                    </div>
+                    <div>
+                        <label for="expr">Expression libre</label>
+                        <textarea id="expr" name="expr" rows="5" cols="30" placeholder="Exprimez vous librement ici quant à votre opinion sur la cause">
+                        </textarea>
+                    </div>
+                    </fieldset>
+                    <input id="boutton" type="submit" value="Envoyer">
+                </form>
+            </article>
+            <aside class="Contact">
+                <h2>Retrouvez nous ici:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d371.5214832824035!2d3.8515117850835865!3d43.63653504393483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6aff6d742f601%3A0xb527e0bb351555a2!2sCity%20de%20la%20caill%C3%A9!5e0!3m2!1sfr!2sfr!4v1701197607306!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>
+                City de la caillé
+                Rue du Monte Cinto, 34090 Montpellier
+                06.06.06.06.06
+                </p>
+            </aside>
+        </main>
+        <footer>
+            <div id="goTop"><a href="#enHautLa">↑</a></div>
+            <a>Retrouvez nous sur youtube "Morioh Podcast" pour plus de débats.</a>
+            <a>Ou sur morioh-podcast.fr pour plus d'articles.</a>
+            <a>© Tout droits réservés à Adam, Théodore, Goharik et Naïs</a>
+        </footer>
+    </body>
+</html>
